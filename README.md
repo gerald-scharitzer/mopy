@@ -1,0 +1,2 @@
+# mopy
+Mojo vs Python
