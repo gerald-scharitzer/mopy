@@ -6,6 +6,7 @@ fn main():
 
 	print(func("moarg"))
 	genFunc(TraitImp())
+	print(parm_func["static"]())
 
 # Mojo function types are static
 fn func(arg: String) -> String:
@@ -36,3 +37,7 @@ struct TraitImp(MoTrait):
 # generic functions have trait parameters
 fn genFunc[T: MoTrait](arg: T):
 	arg.traitMethod("genFunc")
+
+# funtion parameters are resolved at compile time
+fn parm_func[msg: String]() -> String:
+	return "parm_func " + msg

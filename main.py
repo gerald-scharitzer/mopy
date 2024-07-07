@@ -26,6 +26,10 @@ class PyClass:
 # there are no traits in Python
 # trait PyTrait:
 
+# function paremeters require Python 3.12 or higher
+# def parm_func[msg: str]():
+#	return "parm_func " + msg
+
 # call functions after they are defined only
 if __name__ == "__main__":
     main()
