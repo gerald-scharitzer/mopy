@@ -20,9 +20,12 @@ class PyClass:
 	field1: int
 	field2: int
 
-# There are no structs in Python
+# there are no structs in Python
 # struct Struc:
 
-# Call functions after they are defined only
+# there are no traits in Python
+# trait PyTrait:
+
+# call functions after they are defined only
 if __name__ == "__main__":
     main()
