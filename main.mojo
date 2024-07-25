@@ -1,3 +1,5 @@
+from sub import subfunc
+
 # Mojo calls the main function
 fn main():
 	# Mojo str is a function
@@ -7,6 +9,7 @@ fn main():
 	print(func("moarg"))
 	genFunc(TraitImp())
 	print(parm_func["static"]())
+	print(subfunc("subarg"))
 
 # Mojo function types are static
 fn func(arg: String) -> String:
