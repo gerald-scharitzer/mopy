@@ -1,3 +1,4 @@
+"""Mojo main module"""
 from sub import subfunc
 
 # Mojo calls the main function
@@ -6,7 +7,10 @@ fn main():
 	var version = str(1)
 	print("version", version)
 
-	print(func("moarg"))
+	var moarg: String = "moarg"
+	print(func(moarg))
+	# TODO assert moarg == "moarg"
+	
 	genFunc(TraitImp())
 	print(parm_func["static"]())
 	print(subfunc("subarg"))
@@ -15,6 +19,8 @@ fn main():
 fn func(arg: String) -> String:
 	# declare variables in `fn` functions with `var`
 	var prefix = "mofunc "
+	# function arguments are immutable references by default
+	# arg = prefix + arg
 	return prefix + arg
 
 # there are no classes in Mojo yet

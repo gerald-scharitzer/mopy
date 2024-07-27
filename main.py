@@ -1,15 +1,24 @@
+"""Python main module"""
+from sub import subfunc
+
 # Python does not call the main function
 def main():
 	# Python str is a class
 	version: str = "1"
 	print("version", version)
 
-	print(func("pyarg"))
-	print(func_typed("pyarg"))
+	pyarg: str = "pyarg"
+	print(func(pyarg))
+	assert pyarg == "pyarg"
+
+	print(func_typed(pyarg))
+	print(subfunc("subarg"))
 
 # Python function types are dynamic
 def func(arg):
-	return "pyfunc " + arg
+	# function arguments are copies
+	arg = "pyfunc " + arg
+	return arg
 
 # Python function type annotations have no effect
 def func_typed(arg: str) -> str:
