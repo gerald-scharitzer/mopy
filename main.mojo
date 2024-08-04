@@ -1,4 +1,5 @@
 """Mojo main module"""
+from mopy import packfun
 from sub import subfunc
 
 # Mojo calls the main function
@@ -14,6 +15,7 @@ fn main():
 	genFunc(TraitImp())
 	print(parm_func["static"]())
 	print(subfunc("subarg"))
+	print(packfun())
 
 # Mojo function types are static
 fn func(arg: String) -> String:
