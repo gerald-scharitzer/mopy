@@ -1,13 +1,13 @@
 """Mojo main module"""
-from mopy import packfun
+from mopy import packfun, VERSION
 from sub import subfunc
 
 # Mojo calls the main function
 fn main():
 	# Mojo str is a function
-	var version = str(1)
-	print("version", version)
-
+	# var version = str(1)
+	print("version", VERSION)
+	
 	var moarg: String = "moarg"
 	print(func(moarg))
 	# TODO assert moarg == "moarg"

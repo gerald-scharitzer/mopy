@@ -1,11 +1,12 @@
 """Python main module"""
 from sub import subfunc
 
+VERSION: str = "0.0-dev1"
+
 # Python does not call the main function
 def main():
 	# Python str is a class
-	version: str = "1"
-	print("version", version)
+	print("version", VERSION)
 
 	pyarg: str = "pyarg"
 	print(func(pyarg))
