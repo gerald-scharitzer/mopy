@@ -1,7 +1,7 @@
 """Python main module"""
 from sub import subfunc
 
-VERSION: str = "0.0-dev1"
+VERSION: str = "0.0-dev2"
 
 # Python does not call the main function
 def main():
