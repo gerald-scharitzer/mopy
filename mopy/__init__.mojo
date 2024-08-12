@@ -1,2 +1,2 @@
 from .packmod import packfun
-alias VERSION = "0.0-dev2"
+alias VERSION = "0.0"
